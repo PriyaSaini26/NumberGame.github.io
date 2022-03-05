@@ -8,10 +8,13 @@
     <title>Document</title>
     <style>
         body {
-            border: 5px solid purple;
-            background-color: rgb(238, 188, 216);
+
+            background-image: url("no_back7.jpg");
+            background-color: azure;
             padding: 7px;
-            height: 740px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         #main {
@@ -22,10 +25,11 @@
 
         h2 {
             margin-top: 200px;
-            font-size: 50px;
-            text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;
+            font-size: 55px;
+            text-shadow: 1px 1px 2px black, 0 0 10px rgb(57, 241, 57), 0 0 5px rgb(71, 243, 85);
             color: white;
             padding-top: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         input {
@@ -40,50 +44,54 @@
 
         #main button {
             font-size: 30px;
-            background-image: linear-gradient(purple, pink);
+            background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
 
             padding: 15px;
-            border-radius: 6px;
+            border-radius: 12px;
         }
 
         img {
-            margin-top: 150px;
-            margin-left: 570px;
+            margin-top: 130px;
+            margin-left: 505px;
             height: 350px;
             width: 500px;
+            border: 2px solid white;
         }
 
         #result button {
             margin-top: 20px;
             margin-left: 690px;
             font-size: 30px;
-            background-image: linear-gradient(purple, pink);
+            background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
             padding: 15px;
             border-radius: 6px;
         }
 
         @media screen and (max-width:720px) {
             body {
-                border: 3px solid purple;
-                background-color: rgb(238, 188, 216);
+                background-image: url("no_back7.jpg");
+                background-color: rgb(100, 211, 211);
                 padding: 7px;
-                width: 200px;
-                height: 300px;
+
+                background-repeat: no-repeat;
+                background-size:cover;
+                width: 350px;
+                height: 500px;
             }
 
             #main {
-            text-align: center;
+                text-align: center;
             }
 
             #result {
-             text-align: center;
+                text-align: center;
             }
 
 
             h2 {
-                margin-top: 50px;
-                font-size: 18px;
-                text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;
+                margin-top: 100px;
+                font-size: 28px;
+                text-shadow: 1px 1px 2px black, 0 0 10px rgb(57, 241, 57), 0 0 5px rgb(71, 243, 85);
                 color: white;
                 padding-top: 10px;
             }
@@ -100,10 +108,10 @@
 
             #main button {
                 font-size: 15px;
-                background-image: linear-gradient(purple, pink);
-
+                background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
                 padding: 10px;
                 border-radius: 6px;
+                margin-top: 20px;
             }
 
             img {
@@ -114,10 +122,10 @@
             }
 
             #result button {
-                margin-top: 20px;
+                margin-top: 18px;
                 margin-left: auto;
-                font-size: 10px;
-                background-image: linear-gradient(purple, pink);
+                font-size: 15px;
+                background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
                 padding: 5px;
                 border-radius: 6px;
             }
@@ -139,10 +147,11 @@
     <script>
         function myFun() {
             a = document.getElementsByTagName("input")[0].value;
-            console.log(a);
+            // console.log(a);
             let max = 3;
             let min = 1
             let x = Math.floor(Math.random() * (max - min + 1)) + min;
+            // console.log("x=",x);
             if (x == a) {
                 console.log("Yay matched...");
                 document.getElementById("main").innerHTML = ``;
