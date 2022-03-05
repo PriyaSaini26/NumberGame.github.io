@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 5px solid purple;
+            background-color: rgb(238, 188, 216);
+            padding: 7px;
+            height: 740px;
+        }
+
+        #main {
+
+            text-align: center;
+        }
+
+
+        h2 {
+            margin-top: 200px;
+            font-size: 50px;
+            text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;
+            color: white;
+            padding-top: 30px;
+        }
+
+        input {
+            margin: 13px;
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 3px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #main button {
+            font-size: 30px;
+            background-image: linear-gradient(purple, pink);
+
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        img {
+            margin-top: 150px;
+            margin-left: 570px;
+            height: 350px;
+            width: 500px;
+        }
+
+        #result button {
+            margin-top: 20px;
+            margin-left: 690px;
+            font-size: 30px;
+            background-image: linear-gradient(purple, pink);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        @media screen and (max-width:720px) {
+            body {
+                border: 3px solid purple;
+                background-color: rgb(238, 188, 216);
+                padding: 7px;
+                width: 200px;
+                height: 300px;
+            }
+
+            #main {
+            text-align: center;
+            }
+
+            #result {
+             text-align: center;
+            }
+
+
+            h2 {
+                margin-top: 50px;
+                font-size: 18px;
+                text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;
+                color: white;
+                padding-top: 10px;
+            }
+
+            input {
+                margin: 5px;
+                margin-bottom: 10px;
+                padding: 5px;
+                border: 2px solid gray;
+                border-radius: 10px;
+                font-size: 12px;
+                text-align: center;
+            }
+
+            #main button {
+                font-size: 15px;
+                background-image: linear-gradient(purple, pink);
+
+                padding: 10px;
+                border-radius: 6px;
+            }
+
+            img {
+                margin-top: 50px;
+                margin-left: 20px;
+                height: 150px;
+                width: 120px;
+            }
+
+            #result button {
+                margin-top: 20px;
+                margin-left: auto;
+                font-size: 10px;
+                background-image: linear-gradient(purple, pink);
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+    <div id="main">
+        <h2>Guess a number 1, 2 or 3...</h2><br>
+        <input type="text" placeholder="Enter a number..."><br>
+        <button type="submit" onclick="myFun()">PLAY</button>
+    </div>
+
+
+
+    <script>
+        function myFun() {
+            a = document.getElementsByTagName("input")[0].value;
+            console.log(a);
+            let max = 3;
+            let min = 1
+            let x = Math.floor(Math.random() * (max - min + 1)) + min;
+            if (x == a) {
+                console.log("Yay matched...");
+                document.getElementById("main").innerHTML = ``;
+                document.getElementById("result").innerHTML = `<img src="snoopy-yay.gif"><br>
+              <button type="submit" onclick="start()">PLAY AGAIN</button>`
+            }
+            else {
+                console.log("Try again...");
+                document.getElementById("main").innerHTML = ``;
+                document.getElementById("result").innerHTML = `<img src="gameOver.gif"><br>
+              <button type="submit" onclick="start()">PLAY AGAIN</button>`
+            }
+        }
+
+        function start() {
+            document.getElementById("result").innerHTML = ``;
+            document.getElementById("main").innerHTML = ` <h2>Guess a number 1, 2 or 3...</h2><br>
+        <input type="text" placeholder="Enter the number..."><br>
+        <button type="submit" onclick="myFun()">PLAY</button>`;
+        }
+    </script>
+</body>
+
+</html>
