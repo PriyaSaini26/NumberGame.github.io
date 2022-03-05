@@ -1,10 +1,3 @@
-function play() {
-    document.getElementById("main").innerHTML = `
-    <h2>Guess a number 1, 2 or 3...</h2><br>
-<input type="text" placeholder="Enter a number..."><br>
-<button type="submit" onclick="myFun()">PLAY</button>
-    `;
-}
 function myFun() {
     a = document.getElementsByTagName("input")[0].value;
     // console.log(a);
