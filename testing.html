@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body {
+
+            background-image: url("no_back7.jpg");
+            background-color: azure;
+            padding: 7px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #main {
+
+            text-align: center;
+        }
+
+        #result {
+            text-shadow: 1px 1px 2px black, 0 0 10px rgb(57, 241, 57), 0 0 5px rgb(71, 243, 85);
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h2 {
+            margin-top: 200px;
+            font-size: 55px;
+            text-shadow: 1px 1px 2px black, 0 0 10px rgb(57, 241, 57), 0 0 5px rgb(71, 243, 85);
+            color: white;
+            padding-top: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input {
+            margin: 13px;
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 3px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #main button {
+            font-size: 30px;
+            background-image: linear-gradient(rgb(243, 247, 35), rgb(46, 41, 42));
+
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        img {
+
+            margin-left: auto;
+            height: 350px;
+            width: 500px;
+            border: 1px solid white;
+        }
+
+        #result button {
+            margin-top: 20px;
+            margin-left: auto;
+            font-size: 30px;
+            background-image: linear-gradient(rgb(243, 247, 35), rgb(41, 37, 38));
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        @media (max-width:480px) {
+            body {
+                background-image: none;
+                background-color: rgb(29, 78, 41);
+                padding: 7px;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 350px;
+                height: 500px;
+            }
+
+            #main {
+                text-align: center;
+            }
+
+            #result {
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                margin-top: 100px;
+            }
+
+
+            h2 {
+                margin-top: 150px;
+                font-size: 28px;
+                text-shadow: 1px 1px 2px black, 0 0 10px rgb(57, 241, 57), 0 0 5px rgb(71, 243, 85);
+                color: white;
+                padding-top: 10px;
+            }
+
+            input {
+                margin: 5px;
+                margin-bottom: 10px;
+                padding: 5px;
+                border: 2px solid gray;
+                border-radius: 10px;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            #main button {
+                font-size: 20px;
+                background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
+                padding: 15px;
+                border-radius: 10px;
+                margin-top: 50px;
+            }
+
+            img {
+                margin-top: 50px;
+                margin-left: 20px;
+                height: 250px;
+                width: 200px;
+            }
+
+            #result button {
+                margin-top: 20px;
+                margin-left: auto;
+                font-size: 18px;
+                background-image: linear-gradient(rgb(246, 250, 37), rgb(80, 69, 71));
+                padding: 7px;
+                border-radius: 6px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="result"></div>
+    <div id="main"> 
+        <h2>Guess a number 1, 2 or 3...</h2><br>
+        <input type="text" placeholder="Enter a number..."><br>
+        <button type="submit" onclick="myFun()">PLAY</button>
+    </div>
+
+
+
+    <script src="numberGame.js"></script>
+</body>
+
+</html>

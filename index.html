@@ -8,171 +8,151 @@
     <title>Document</title>
     <style>
         body {
-
-            background-image: url("no_back7.jpg");
-            background-color: azure;
-            padding: 7px;
-
+            background-image: url("background.webp");
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        #main {
+        #text {
+            margin-top: 100px;
+            float: right;
+            margin-right: 190px;
 
+        }
+
+        #text h1 {
+            color: rgb(50, 173, 61);
+            font-size: 70px;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 2px 3px 3px black;
+        }
+
+        #text h2 {
+            text-shadow: 1px 3px 3px black;
+            color: rgb(25, 145, 145);
+            font-size: 50px;
+            font-style: italic;
             text-align: center;
         }
 
-
-        h2 {
-            margin-top: 200px;
-            font-size: 55px;
-            text-shadow: 1px 1px 2px black, 0 0 10px rgb(57, 241, 57), 0 0 5px rgb(71, 243, 85);
-            color: white;
-            padding-top: 30px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        #text li {
+            font-size: 25px;
         }
 
-        input {
-            margin: 13px;
-            margin-bottom: 30px;
-            padding: 15px;
-            border: 3px solid gray;
+        #text button {
+            border: 2px solid rgb(81, 102, 49);
+            font-size: 35px;
+            background-image: linear-gradient(rgb(179, 227, 247), rgb(62, 141, 131));
+            color: black;
             border-radius: 10px;
-            font-size: 20px;
-            text-align: center;
+            margin-left: 180px;
+            margin-top: 50px;
+            padding: 10px;
         }
 
-        #main button {
-            font-size: 30px;
-            background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
-
-            padding: 15px;
-            border-radius: 12px;
+        #img1 {
+            margin-left: 50px;
+            margin-top: 150px;
+            float: left;
+            box-shadow: 2px 5px 5px rgb(15, 114, 109);
         }
 
-        img {
-            margin-top: 130px;
-            margin-left: 505px;
-            height: 350px;
-            width: 500px;
-            border: 2px solid white;
-        }
 
-        #result button {
-            margin-top: 20px;
-            margin-left: 690px;
-            font-size: 30px;
-            background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
-            padding: 15px;
-            border-radius: 6px;
-        }
 
-        @media screen and (max-width:720px) {
+
+
+
+
+        @media (max-width:480px) {
+
             body {
-                background-image: url("no_back7.jpg");
-                background-color: rgb(100, 211, 211);
-                padding: 7px;
-
+                background-image: url("background.webp");
                 background-repeat: no-repeat;
-                background-size:cover;
-                width: 350px;
-                height: 500px;
+                background-size: cover;
+                height: 800px;
+                background-color: rgb(207, 233, 243);
             }
 
-            #main {
-                text-align: center;
-            }
-
-            #result {
-                text-align: center;
-            }
-
-
-            h2 {
-                margin-top: 100px;
-                font-size: 28px;
-                text-shadow: 1px 1px 2px black, 0 0 10px rgb(57, 241, 57), 0 0 5px rgb(71, 243, 85);
-                color: white;
-                padding-top: 10px;
-            }
-
-            input {
-                margin: 5px;
-                margin-bottom: 10px;
-                padding: 5px;
-                border: 2px solid gray;
-                border-radius: 10px;
-                font-size: 12px;
-                text-align: center;
-            }
-
-            #main button {
-                font-size: 15px;
-                background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
-                padding: 10px;
-                border-radius: 6px;
-                margin-top: 20px;
-            }
-
-            img {
-                margin-top: 50px;
+            #text {
+                float: none;
                 margin-left: 20px;
-                height: 150px;
-                width: 120px;
+             
+                width: 300px;
+                margin-top: 10px;
             }
 
-            #result button {
-                margin-top: 18px;
-                margin-left: auto;
-                font-size: 15px;
-                background-image: linear-gradient(rgb(243, 247, 35), rgb(80, 69, 71));
+            #text h1 {
+                color: rgb(50, 173, 61);
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-shadow: 2px 3px 3px black;
+                text-align: center;
+            }
+
+            #img1 {
+               
+                margin-left: 80px;
+                width: 200px;
+                height: 250px;
+                margin-top: 15px;
+                box-shadow: 2px 5px 5px rgb(15, 114, 109);
+                clear: both;
+                margin-bottom: 10px;
+                float: none;
+            }
+            #img1 img {
+                width: 200px;
+                height: 250px;
+            }
+
+            #text h2 {
+                text-shadow: 1px 3px 3px black;
+                color: rgb(25, 145, 145);
+                font-size: 30px;
+                font-style: italic;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            #text li {
+                font-size: 20px;
+            }
+
+            #text button {
+                border: 2px solid rgb(81, 102, 49);
+                font-size: 20px;
+                background-image: linear-gradient(rgb(179, 227, 247), rgb(62, 141, 131));
+                color: black;
+                border-radius: 10px;
+                margin-left: 120px;
+                margin-top: 10px;
                 padding: 5px;
-                border-radius: 6px;
             }
 
+           
         }
     </style>
 </head>
 
 <body>
-    <div id="result"></div>
-    <div id="main">
-        <h2>Guess a number 1, 2 or 3...</h2><br>
-        <input type="text" placeholder="Enter a number..."><br>
-        <button type="submit" onclick="myFun()">PLAY</button>
+    <div id="img1">
+        <img src="magician.jpg" alt="">
+    </div>
+    <div id="text">
+        <h1>Guess a number</h1><br>
+        <h2>How to play-</h2>
+
+        <ul>
+            <li>The magician will choose a secret number.</li>
+            <li>You have to guess that secret number.</li>
+            <li>If both the numbers matches, you will win.</li>
+        </ul>
+
+        <button><a href="testing.html" style="text-decoration: none;"> START</a></button>
     </div>
 
 
-
-    <script>
-        function myFun() {
-            a = document.getElementsByTagName("input")[0].value;
-            // console.log(a);
-            let max = 3;
-            let min = 1
-            let x = Math.floor(Math.random() * (max - min + 1)) + min;
-            // console.log("x=",x);
-            if (x == a) {
-                console.log("Yay matched...");
-                document.getElementById("main").innerHTML = ``;
-                document.getElementById("result").innerHTML = `<img src="snoopy-yay.gif"><br>
-              <button type="submit" onclick="start()">PLAY AGAIN</button>`
-            }
-            else {
-                console.log("Try again...");
-                document.getElementById("main").innerHTML = ``;
-                document.getElementById("result").innerHTML = `<img src="gameOver.gif"><br>
-              <button type="submit" onclick="start()">PLAY AGAIN</button>`
-            }
-        }
-
-        function start() {
-            document.getElementById("result").innerHTML = ``;
-            document.getElementById("main").innerHTML = ` <h2>Guess a number 1, 2 or 3...</h2><br>
-        <input type="text" placeholder="Enter the number..."><br>
-        <button type="submit" onclick="myFun()">PLAY</button>`;
-        }
-    </script>
 </body>
 
 </html>
